@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>727</width>
+    <height>572</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>727</width>
+    <height>572</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>727</width>
+    <height>572</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>日本日历</string>
+  </property>
+  <property name="autoFillBackground">
+   <bool>false</bool>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">#MainWindow
+{
+	
+	background-image: url(:/new/prefix1/a/calendar_background.png);
+}</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <widget class="QLineEdit" name="le_year">
+        <property name="placeholderText">
+         <string>请输入年份</string>
+        </property>
+        <property name="clearButtonEnabled">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label">
+        <property name="styleSheet">
+         <string notr="true">border-color: rgb(0, 0, 0);
+font: 12pt &quot;Adobe Arabic&quot;;</string>
+        </property>
+        <property name="text">
+         <string>年</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="le_month">
+        <property name="placeholderText">
+         <string>请输入月份</string>
+        </property>
+        <property name="clearButtonEnabled">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_2">
+        <property name="styleSheet">
+         <string notr="true">border-color: rgb(0, 0, 0);
+font: 12pt &quot;Adobe Arabic&quot;;</string>
+        </property>
+        <property name="text">
+         <string>月</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="le_day">
+        <property name="placeholderText">
+         <string>请输入日期</string>
+        </property>
+        <property name="clearButtonEnabled">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_3">
+        <property name="styleSheet">
+         <string notr="true">border-color: rgb(0, 0, 0);
+font: 12pt &quot;Adobe Arabic&quot;;</string>
+        </property>
+        <property name="text">
+         <string>日</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btn_ok">
+        <property name="styleSheet">
+         <string notr="true">font: 9pt &quot;迷你简黄草&quot;;
+</string>
+        </property>
+        <property name="text">
+         <string>确定</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <widget class="QCalendarWidget" name="calendarWidget">
+      <property name="maximumSize">
+       <size>
+        <width>705</width>
+        <height>16777215</height>
+       </size>
+      </property>
+      <property name="autoFillBackground">
+       <bool>true</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QCalendarWidget QTableView 
+{
+    alternate-background-color:#FFFFF0 ;  
+    /*background-color: #FFFFF0;*/
+	
+	background-image: url(:/new/prefix1/background.jpg);
+
+}
+QToolButton#qt_calendar_monthbutton,#qt_calendar_yearbutton{
+
+	color: #9ea5a9; 
+	font: 9pt simHei; 
+}
+QCalendarWidget QWidget#qt_calendar_navigationbar
+{
+	background-color: #FFFFF0;
+}</string>
+      </property>
+      <property name="locale">
+       <locale language="Japanese" country="Japan"/>
+      </property>
+      <property name="minimumDate">
+       <date>
+        <year>1900</year>
+        <month>9</month>
+        <day>14</day>
+       </date>
+      </property>
+      <property name="maximumDate">
+       <date>
+        <year>2100</year>
+        <month>12</month>
+        <day>31</day>
+       </date>
+      </property>
+      <property name="firstDayOfWeek">
+       <enum>Qt::Monday</enum>
+      </property>
+      <property name="gridVisible">
+       <bool>true</bool>
+      </property>
+      <property name="horizontalHeaderFormat">
+       <enum>QCalendarWidget::ShortDayNames</enum>
+      </property>
+      <property name="verticalHeaderFormat">
+       <enum>QCalendarWidget::NoVerticalHeader</enum>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_2">
+      <item>
+       <widget class="QLineEdit" name="le_fev">
+        <property name="text">
+         <string/>
+        </property>
+        <property name="placeholderText">
+         <string>输入你要查询的节日</string>
+        </property>
+        <property name="clearButtonEnabled">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btn_find">
+        <property name="styleSheet">
+         <string notr="true">font: 9pt &quot;迷你简黄草&quot;;</string>
+        </property>
+        <property name="text">
+         <string>查询</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>727</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>帮助</string>
+    </property>
+    <addaction name="action"/>
+    <addaction name="action_2"/>
+   </widget>
+   <addaction name="menu"/>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="action">
+   <property name="text">
+    <string>按月检索</string>
+   </property>
+  </action>
+  <action name="action_2">
+   <property name="text">
+    <string>备忘录</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>

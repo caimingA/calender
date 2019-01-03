@@ -1,0 +1,29 @@
+<RCC>
+    <qresource prefix="/new/prefix1">
+        <file>img-69cd0e51bd62c5c9e4acfa534c40eb55.jpg</file>
+        <file>a/chengrenjie.png</file>
+        <file>a/chunfen.png</file>
+        <file>a/ertongjie.png</file>
+        <file>a/hai.png</file>
+        <file>a/jianguo.png</file>
+        <file>a/jinglaojie.png</file>
+        <file>a/laodong.png</file>
+        <file>a/lv.png</file>
+        <file>a/nverjie.png</file>
+        <file>a/qingrenjie.png</file>
+        <file>a/qiufen.png</file>
+        <file>a/shan.png</file>
+        <file>a/shengdan.png</file>
+        <file>a/tianhuangdansheng.png</file>
+        <file>a/tiyu.png</file>
+        <file>a/wenhuaji.png</file>
+        <file>a/xianfa.png</file>
+        <file>a/xinnian.png</file>
+        <file>a/zhaohe.png</file>
+        <file>background.jpg</file>
+        <file>a/ram.png</file>
+        <file>a/calendar_background.png</file>
+        <file>a/month_search_background.png</file>
+        <file>a/find_more_03.png</file>
+    </qresource>
+</RCC>
